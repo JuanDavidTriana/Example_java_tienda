@@ -1,18 +1,49 @@
-## Getting Started
+# 📦 Sistema de Gestión de Productos y Ventas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este proyecto permite administrar productos y llevar un historial de ventas con operaciones básicas como agregar, actualizar, eliminar y validar stock.  
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🛒 Entidad: Producto
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Atributos
+- **ID**
+- **Nombre**
+- **Precio**
+- **Categoría**
+- **Stock**
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Operaciones
+- `Agregar Producto (Producto) -> Bool`  
+- `Buscar Todos los Productos () -> Lista<Producto>`  
+- `Actualizar Producto (ID, Producto) -> Bool`  
+- `Eliminar Producto (ID) -> Bool`  
+- `Validar Stock (ID) -> Stock`  
+- `Filtrar por Atributo (atributo, valor) -> Lista<Producto>`  
+- `Modificar Atributo Específico (ID, atributo, valor) -> Bool`  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## 📑 Entidad: Historial_Venta
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Atributos
+- **ID**
+- **Nombre_Comprador**
+- **ID_Producto**
+- **Fecha_Venta**
+- **Cantidad**
+- **Precio**
+
+### Operaciones
+- `Agregar Venta (ID_Producto, Cantidad, Validar Stock) -> Bool`  
+- `Listar Ventas () -> Lista<Historial_Venta>`  
+- `Filtrar Ventas (atributo, valor) -> Lista<Historial_Venta>`  
+
+---
+
+## 🚀 Posibles Mejoras Futuras
+- Generar reportes de ventas (diarios, mensuales, anuales).  
+- Integración con base de datos.  
+- Interfaz gráfica o API REST.  
+- Control de usuarios y roles (administrador, vendedor).  
+

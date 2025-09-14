@@ -39,6 +39,12 @@ Este proyecto permite administrar productos y llevar un historial de ventas con 
 - `Listar Ventas () -> Lista<Historial_Venta>`  
 - `Filtrar Ventas (atributo, valor) -> Lista<Historial_Venta>`  
 
+
+## 📝 Actividades Pendientes
+- [ ] Terminar el **Modelo** (`Producto`, `Historial_Venta`).  
+- [ ] Implementar el **Controlador** (`ProductoController`, `VentaController`).  
+- [ ] Crear pruebas básicas para validar las operaciones.  
+
 ---
 
 ## 🚀 Posibles Mejoras Futuras
